@@ -1,0 +1,140 @@
+/*
+Meme Share App
+v1.0
+*/
+
+// Vars
+blk = #101010
+ww = #fff 
+cw = #fafafa
+tt = #303030
+g15 = #151515
+g20 = #202020
+geb = #ebebeb
+gcc = #cccccc
+gab = #ababab
+gdb = #dbdbdb
+g2a = #2a2a2a
+g30 = #303030
+g46 = #464646
+g50 = #505050
+g57 = #575757
+g87 = #878787
+blu = #2b94c5
+blu2 = #3ac1f0
+grn = #00c196
+grn2 = #029877
+notif = #f26c4f
+erred = #f54047
+b-grad = #3660be
+b-grad2 = #258ac3
+g-grad = #24b7bc
+g-grad2 = #00cab0
+dev-grad = #611146
+dev-grad2 = #d24949
+fb = #3b5998
+tw = #4099ff
+
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	border-radius arguments
+
+box-sizing()
+	-webkit-box-sizing border-box
+	-moz-box-sizing border-box
+	box-sizing border-box
+
+std-transition(t)
+	-webkit-transition all t ease
+	-moz-transition all t ease
+	-o-transition all t ease
+	transition all t ease
+
+rotate-it(ang)
+	-webkit-transform rotate(ang)
+	-ms-transform rotate(ang)
+	-o-transform rotate(ang)
+	transform rotate(ang)
+
+box-shadow(args)
+	-webkit-box-shadow args
+	box-shadow args
+
+// IMPORTS
+@import url('//cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css')
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700')
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+
+// SETUP
+html 
+	font-size 1.188em
+	
+body 
+	background-color g15
+	color tt
+	font 18px/26px 'Open Sans', sans-serif
+	text-rendering optimizeLegibility
+	-webkit-font-smoothing antialiased
+	
+p 
+	margin-bottom 1.3em
+
+h1, h2
+h3, h4
+	margin 1.414em 0 0.5em
+	font-weight 700
+	line-height 1.2em
+
+h1 
+	margin-top 0
+	font-size 3.157em
+
+h2 
+	font-size 2.369em
+
+h3 
+	font-size 1.777em
+
+h4 
+	font-size 1.333em
+
+small
+.font_small 
+	font-size 0.75em
+	
+*:focus
+	outline none
+
+// Start Styling
+#app-wrapper
+	background-color geb
+	margin 0 auto
+	max-width 580px
+	
+#main-head
+	background-color grn
+	color ww 
+	height 67px
+	text-align center 
+	
+	h1 
+		font-size 1.6em 
+		line-height 67px 
+		margin 0
+		padding 0
+		text-transform uppercase 
+		
+#posts-list
+	width 100%
+	
+.post-item
+	box-sizing()
+	margin 1px 0
+	padding 26px
+	width 100%
+	
+	img
+		border-radius(4px)
+		height auto 
+		width 100%
