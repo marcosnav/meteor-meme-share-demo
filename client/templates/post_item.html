@@ -1,5 +1,18 @@
 <template name="postItem">
 	<article class="post-item">
+		<header class="post-head">
+			<h4 class="author">{{publisher}}</h4>
+			<time class="post-date">{{date}}</time>
+		</header>
 		<img src="{{src}}">
+		<footer class="post-footer">
+			<div class="post-details">
+				<div class="post-stars"><span class="fa fa-star"></span> {{stars}}</div>
+				<div class="post-comments"><span class="fa fa-comment"></span> {{stars}}</div>
+			</div>
+			<p class="post-comment">
+				{{comment}}
+			</p>
+		</footer>
 	</article>
 </template>

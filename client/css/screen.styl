@@ -61,12 +61,16 @@ box-shadow(args)
 	-webkit-box-shadow args
 	box-shadow args
 
-// IMPORTS
+/* ===========================
+** IMPORTS
+============================*/
 @import url('//cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css')
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700')
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
 
-// SETUP
+/* ===========================
+** SETUP
+============================*/
 html 
 	font-size 1.188em
 	
@@ -106,16 +110,20 @@ small
 *:focus
 	outline none
 
-// Start Styling
+/* ===========================
+** WRAPPER AND HEAD
+============================*/
 #app-wrapper
 	background-color geb
 	margin 0 auto
+	position relative
 	max-width 580px
 	
 #main-head
 	background-color grn
 	color ww 
 	height 67px
+	position relative
 	text-align center 
 	
 	h1 
@@ -125,16 +133,70 @@ small
 		padding 0
 		text-transform uppercase 
 		
+/* ===========================
+** POSTS LIST
+============================*/
 #posts-list
+	padding-bottom 42px
+	position relative
 	width 100%
 	
 .post-item
+	background-color ww 
+	border-radius(4px)
+	box-shadow(0 1px 3px rgba(g15, 0.3))
 	box-sizing()
-	margin 1px 0
-	padding 26px
-	width 100%
+	margin 26px
+	padding 0 16px
+	position relative
 	
 	img
 		border-radius(4px)
 		height auto 
 		width 100%
+		
+.post-head 
+	height 42px
+	position relative
+	
+	.author 
+		font-size 1em
+		line-height 42px 
+		margin 0
+		padding 0
+		
+	.post-date 
+		display inline-block
+		font-size 0.8em 
+		line-height 42px 
+		position absolute
+		top 0
+		right 0
+		
+.post-footer
+	padding 16px 0
+	position relative
+		
+	.post-stars
+	.post-comments
+		border-radius(13px)
+		display inline-block
+		font-size 0.8em 
+		height 26px
+		line-height 26px  
+		padding 0 12px
+		vertical-align top
+		
+	.post-stars
+		border 1px solid notif 
+		color notif 
+		
+	.post-comments
+		border 1px solid blu
+		color blu
+
+	.post-comment
+		font-size 0.9em 
+		margin 0
+		margin-top 10px 
+		padding 0
