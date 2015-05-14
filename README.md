@@ -18,3 +18,12 @@ Meteor app example.
 - See posts in console (Posts.find().fetch();)
 - Update helpers for posts list
 - Remove autopublish, insecure
+
+## 3.0 Publications and Subscriptions
+- Remove posts data from posts_list helper, update date on fixtures
+- Create publications file and publish posts
+- Touch main.js file and add temporary subscription
+- Add ( meteor add momentjs:moment )
+- Reset DB ( db.dropDatabase() )
+- Create post item helpers to support date fromNow
+- Add post directly on mongo to see reactivity
