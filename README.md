@@ -42,3 +42,6 @@ Meteor app example.
 - Do postPage route, update postItem template
 - Do postPage template and helpers for date and comments
 - Add hook Router.onBeforeAction('dataNotFound', {only: 'postPage'});
+
+## 5.0 More reactivity 
+- Meteor Methods, create events when clicking stars
