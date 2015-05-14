@@ -1,5 +1,5 @@
-<template name="postItem">
-	<article class="post-item">
+<template name="postPage">
+	<article id="post-page" class="post-item">
 		<header class="post-head">
 			<h4 class="author">{{publisher}}</h4>
 			<time class="post-date">{{dateForHumans}}</time>
@@ -13,7 +13,13 @@
 			<p class="post-comment">
 				{{comment}}
 			</p>
-			<a href="{{pathFor 'postPage'}}" class="the-green-button">See Comments</a>
+			<div class="comments-section">
+				{{#each postComments}}
+				<p>
+					{{this.comment}}
+				</p>
+				{{/each}}
+			</div>
 		</footer>
 	</article>
 </template>

@@ -27,3 +27,18 @@ Meteor app example.
 - Reset DB ( db.dropDatabase() )
 - Create post item helpers to support date fromNow
 - Add post directly on mongo to see reactivity
+
+## 4.0 Routing and Users
+- Add (meteor add iron:router)
+- Add (meteor add accounts-password)
+- Restructure main.html only with head and create layout.html
+- Create our router.js file and define our layoutTemplate
+- Do first route for home Router.route('',{})
+- configure loadingTemplate and notFoundTemplate
+- waitOn posts, remove subscription on main.js
+- reset db, add comments count to fixture
+- Do comments collection
+- Add users and comments to fixture
+- Do postPage route, update postItem template
+- Do postPage template and helpers for date and comments
+- Add hook Router.onBeforeAction('dataNotFound', {only: 'postPage'});

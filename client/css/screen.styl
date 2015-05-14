@@ -66,7 +66,6 @@ box-shadow(args)
 ============================*/
 @import url('//cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css')
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700')
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
 
 /* ===========================
 ** SETUP
@@ -109,6 +108,27 @@ small
 	
 *:focus
 	outline none
+	
+a 
+	text-decoration none 
+	
+	&:hover 
+		text-decoration none
+	
+.the-green-button
+	background-color grn
+	border-radius(3px)
+	color ww
+	display inline-block
+	font-size 0.9em 
+	font-weight 700 
+	margin 10px 0
+	padding 5px 16px
+	std-transition(0.2s)
+	
+	&:hover 
+		background-color grn2 
+		color ww
 
 /* ===========================
 ** WRAPPER AND HEAD
@@ -200,3 +220,34 @@ small
 		margin 0
 		margin-top 10px 
 		padding 0
+		
+/* ===========================
+** POSTS PAGE
+============================*/
+#post-page
+	margin-bottom 42px
+	
+.comments-section
+	background-color geb 
+	border-radius(3px)
+	color g30 
+	margin-top 10px
+	padding 10px
+	
+	p 
+		border-bottom 1px solid gdb
+		font-size 0.9em
+		padding 10px 0 
+		
+/* ===========================
+** LOADING AND 404
+============================*/
+#loading 
+	text-align center
+
+#loading-spinner
+	color grn
+	font-size 1.4em 
+	
+#not-found-page
+	text-align center 
